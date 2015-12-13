@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define AppName "CENO"
-#define AppVersion "v0.3.2"
+#define AppVersion "v0.5.0"
 #define AppPublisher "eQualit.ie"
 #define AppURL "https://censorship.no/"
 #define AppExeName "FreenetTray.exe"
@@ -58,10 +58,14 @@ Name: "bulgarian"; MessagesFile: ".\unofficial\Bulgarian.isl,.\translations\Mess
 Name: "croatian"; MessagesFile: ".\unofficial\Croatian.isl,.\translations\Messages_hr.isl"
 Name: "japanese"; MessagesFile: "compiler:Languages\Japanese.isl,.\translations\Messages_ja.isl"
 
+[Dirs]
+Name: "{app}\client\json-files"
+
 [Files]
 Source: "FreenetInstaller_InnoSetup_library\FreenetInstaller_InnoSetup_library.dll"; DestDir: "{tmp}"; Flags: ignoreversion dontcopy
 Source: "install_bundle\jxpiinstall.exe"; DestDir: "{tmp}"; Flags: ignoreversion dontcopy
 Source: "install_bundle\dotNetFx35setup.exe"; DestDir: "{tmp}"; Flags: ignoreversion dontcopy
+Source: "install_client\*"; DestDir: "{app}\client"; Flags: ignoreversion recursesubdirs
 Source: "install_node\bcprov-jdk15on-152.jar"; DestDir: "{app}"; Flags: ignoreversion
 Source: "install_node\FreenetTray.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "install_node\freenet.ico"; DestDir: "{app}"; Flags: ignoreversion
