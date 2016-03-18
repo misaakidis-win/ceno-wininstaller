@@ -1,0 +1,29 @@
+{
+  "browserActionPage": {
+    "message": "popup.html"
+  },
+  "noProxyMsg": {
+    "message": "The CENO Client is not active. Please make sure you have started it before activating this extension."
+  },
+  "activeWord": {
+    "message": "active"
+  },
+  "inactiveWord": {
+    "message": "inactive"
+  },
+  "currentStatus": {
+    "message": "Current status:"
+  },
+  "activeStatus": {
+    "message": "inactive"
+  },
+  "useCeno": {
+    "message": "Toggle CENO"
+  },
+  "whileActive": {
+    "message": "While active, this extension intercepts requests for sites using HTTPS to prevent your browser from encrypting them. You are secured by CENO."
+  },
+  "aboutEQ": {
+    "message": "develops open and reusable systems with a focus on privacy, online security, and information management."
+  }
+}
